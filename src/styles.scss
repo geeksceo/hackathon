@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.burger span:first-child {
+    width: 2.5rem;
+    height: 3.5px;
+    transition: width .75s;
+  }
+
+  .burger span:not(:first-child) {
+    width: 1.65rem;
+    height: 3.5px;
+    transition: transform .75s;
+  }
+
+  .burger span:nth-child(2) {
+    align-self: flex-end;
+  }
+
+  .burger span:nth-child(3) {
+    align-self: flex-start;
+  }
+
+  .burger.perform span:first-child {
+    width: 0;
+  }
+
+  .burger.perform span:not(:first-child) {
+    position: absolute;
+    width: 2.25rem;
+    align-self: center;
+
+  }

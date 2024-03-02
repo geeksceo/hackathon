@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hackathon';
+
+  burgerMenu = false;
+
+  toggleBurger() {this.burgerMenu = !this.burgerMenu}
 }
