@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+// import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 export default function MenuComponent() {
 
@@ -7,7 +9,7 @@ export default function MenuComponent() {
 
 
     return (
-        <div className={` z-40 flex flex-shrink-0 w-full h-16 px-5 bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 shadow-md`}>
+        <div className={` z-40 flex flex-shrink-0 w-full h-16 px-5 bg-white/80 bg-transparent fixed top-0 left-0 right-0`}>
           <div className="w-full md:w-[25%] lg:w-[18%] flex items-center justify-center">
             <span className="ml-2 text-indigo-500 text-5xl md:text-4xl font-semibold herr-von">
                Hackaton
