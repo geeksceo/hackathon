@@ -31,6 +31,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* color: #575af4; */
 }
 
 code {
@@ -67,4 +68,34 @@ code {
   width: 2.25rem;
   align-self: center;
 
+}
+
+
+
+.vertical-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.vertical-text {
+  display: inline-block;
+  animation: verticalTextAnimation 5s infinite;
+}
+
+@keyframes verticalTextAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-100%);
+  }
+  50% {
+      transform: translateY(-200%);
+  }
+  75% {
+      transform: translateY(-300%);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
